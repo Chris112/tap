@@ -13,3 +13,7 @@
 - Eevee readback still shows main commit `48d8d668bc63fa28fb8fe552132225979671aecd`, legacy publication from `main` root, and a built site at `https://chris112.github.io/eevee/`.
 
 These checks establish decoding, browser playback state and layout. They do not establish the sound heard on a physical phone, the suitability of a clip, or a successful GitHub Pages deployment.
+
+## Eight-clip update
+
+The user selected seven Downloads clips plus the original candidate number 5. All seven Downloads originals fully decode with FFmpeg and were copied unchanged. Four automated tests verify complete rounds, boundaries, interrupted/failed playback remaining available, individually completed clips counting toward the round, and empty/single-clip pages. A local browser playback check completed two rounds at accelerated playback using real button clicks: eight unique clips in each round, and no repeat at the boundary. A scripted click without browser interaction was blocked by the autoplay policy; real browser button clicks played successfully. The shuffle round resets on page refresh.

@@ -23,7 +23,7 @@ Plain static files fit this project. A framework, database, account system or ed
 
 ## Pikachu preparation
 
-The user requested `/tap/pikachu/`, sound sourcing and a chance to listen before approving the clips. Five candidate MP3s are available on the draft page, with numbered buttons and preserved source records. These are audition candidates, not a final approved set. No child's name or artwork has been assumed.
+The user requested `/tap/pikachu/`, sound sourcing and a chance to listen before approving the clips. The user selected seven clips from Windows Downloads plus the original audition candidate number 5. The page now has eight numbered buttons. Source records preserve both the original audition and the user-supplied files. No child's name or artwork has been assumed.
 
 After listening, retain the chosen clips, update the welcome message, and remove unapproved clips from the configuration. Keep the same URL. Once deployed, check the URL and playback on the intended phone before printing a QR code. A URL or QR is a stable link, not an offline guarantee; this version needs network access.
 

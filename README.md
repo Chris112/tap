@@ -13,7 +13,7 @@ npm run check
 npm run preview
 ```
 
-Open `http://localhost:8765/pikachu/`. The root lists available pages. `demo/` has generated test tones. Pikachu currently contains five unapproved clips for listening and selection, each with an individual button. Source links and probes are in [docs/pikachu-sources.md](docs/pikachu-sources.md).
+Open `http://localhost:8765/pikachu/`. The root lists available pages. `demo/` has generated test tones. Pikachu contains seven user-supplied Downloads clips plus the retained Pika pika Pikachu candidate, each with an individual button. Source links and probes are in [docs/pikachu-sources.md](docs/pikachu-sources.md).
 
 ## Add a page
 
@@ -21,7 +21,7 @@ Copy a file in `pages/`, set a permanent lowercase slug, and change its title, m
 
 Run `npm run check`. The generator validates slugs, fields, theme colours, duplicate IDs and referenced files before replacing the previous build. It generates `dist/<slug>/index.html`, with shared CSS and JavaScript. It needs no routing fallback and works beneath a GitHub Pages repository prefix.
 
-The main button selects a random clip without repeating the previous successful clip when there is more than one. Individual buttons play a chosen clip. Starting another clip replaces the current one. Stop, error and replay states are supported. Playback begins on a deliberate tap for mobile browsers. The animated bars indicate playback, rather than measured audio levels, and respect reduced motion.
+The main button shuffles every clip into a round. Each clip must finish before it leaves the round. After all clips finish, another shuffled round starts without immediately repeating the last clip when there is more than one. Stopped, interrupted and failed clips remain available. Individual playback also counts toward the current round when it finishes. Refreshing the page starts a fresh round. Individual buttons play a chosen clip. Starting another clip replaces the current one. Stop, error and replay states are supported. Playback begins on a deliberate tap for mobile browsers. The animated bars indicate playback, rather than measured audio levels, and respect reduced motion.
 
 ## Publish the new project
 

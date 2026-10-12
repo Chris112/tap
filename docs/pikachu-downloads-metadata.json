@@ -1,0 +1,138 @@
+[
+  {
+    "filename": "025-kanto-pikachu.mp3",
+    "source": "C:/Users/Chris/Downloads/025-kanto-pikachu.mp3",
+    "sha256": "f17635478e0641148035dd7a593476ba0c3d5ae3d9e2d589e4f58d900f15ba49",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "0.835918"
+      }
+    },
+    "decode": "passed"
+  },
+  {
+    "filename": "marine-pikachu.mp3",
+    "source": "C:/Users/Chris/Downloads/marine-pikachu.mp3",
+    "sha256": "8b01ab1cbab960760cef5a13b7d1596a7fb17b2a965d8c677f1a3713462d251d",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "5.511837"
+      }
+    },
+    "decode": "passed"
+  },
+  {
+    "filename": "pikachu-thunderbolt_1.mp3",
+    "source": "C:/Users/Chris/Downloads/pikachu-thunderbolt_1.mp3",
+    "sha256": "fd7b65513817dbfc689568431ccaf622a708d028803b08240c4f0069ec2821d7",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "4.832653"
+      }
+    },
+    "decode": "passed"
+  },
+  {
+    "filename": "pikachu-laughing.mp3",
+    "source": "C:/Users/Chris/Downloads/pikachu-laughing.mp3",
+    "sha256": "502d7a326f13ec6d16137a33ac0c80779059560b46af39dfb36a1b06b465fad4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "16000",
+          "channels": 1
+        },
+        {
+          "codec_name": "png"
+        }
+      ],
+      "format": {
+        "duration": "3.888000"
+      }
+    },
+    "decode": "passed"
+  },
+  {
+    "filename": "pikachu-happy.mp3",
+    "source": "C:/Users/Chris/Downloads/pikachu-happy.mp3",
+    "sha256": "ab5107e6522f516d9ea4094a99d730a4338b09ceecbc82f992c40c3825fe1715",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "0.914286"
+      }
+    },
+    "decode": "passed"
+  },
+  {
+    "filename": "pikachu_mw38Ry2.mp3",
+    "source": "C:/Users/Chris/Downloads/pikachu_mw38Ry2.mp3",
+    "sha256": "a578beb112243d11b16810d149b16f202df78d9155bb3ec8878a6ba0f410d153",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "1.097143"
+      }
+    },
+    "decode": "passed"
+  },
+  {
+    "filename": "pikachu_scream.mp3",
+    "source": "C:/Users/Chris/Downloads/pikachu_scream.mp3",
+    "sha256": "55ddbb2d1a12239c9b8ce714ddbbedc1e136914f91ce64819132c8b55065dba0",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "1.410612"
+      }
+    },
+    "decode": "passed"
+  }
+]

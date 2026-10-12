@@ -1,6 +1,12 @@
-# Pikachu sound candidates
+# Pikachu sound sources
 
-Downloaded 2026-10-12 for listening/testing only. No files published. Source labels describe the clips; audible cleanliness and exact authenticity remain for user listening. All five MP3 files fully decode with FFmpeg.
+## Current selection
+
+The page now uses seven MP3s supplied by the user from `C:/Users/Chris/Downloads/`, plus the original number 5, `pika-pika-pikachu.mp3`, sourced below. The retained candidate is now button 8. Filenames, durations, SHA-256 hashes and full-decode results for the Downloads files are in `pikachu-downloads-metadata.json`. The Downloads originals were copied without modification.
+
+## Original audition candidates
+
+Downloaded 2026-10-12 for listening/testing only. The initial candidates were published for audition; the current selection is described above. Source labels describe the clips; audible cleanliness and exact authenticity remain for user listening. All five MP3 files fully decode with FFmpeg.
 
 | Candidate / reported label | Duration | Source page | Direct MP3 | Probe |
 |---|---:|---|---|---|

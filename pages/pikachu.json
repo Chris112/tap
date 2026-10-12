@@ -1,7 +1,7 @@
 {
   "slug": "pikachu",
   "title": "Pikachu",
-  "message": "Try the five sound candidates below",
+  "message": "Pikachu wants to say hi",
   "buttonLabel": "Tap me!",
   "playingLabel": "Pika!",
   "theme": {
@@ -14,19 +14,19 @@
   },
   "clips": [
     {
-      "id": "pikachu-sound",
-      "label": "1 \u00b7 Pikachu",
-      "src": "assets/pikachu/pikachu-sound.mp3"
+      "id": "025-kanto-pikachu",
+      "label": "1 \u00b7 Kanto Pikachu",
+      "src": "assets/pikachu/025-kanto-pikachu.mp3"
     },
     {
-      "id": "pika-pika",
-      "label": "2 \u00b7 Pika pika",
-      "src": "assets/pikachu/pika-pika.mp3"
+      "id": "marine-pikachu",
+      "label": "2 \u00b7 Marine Pikachu",
+      "src": "assets/pikachu/marine-pikachu.mp3"
     },
     {
-      "id": "pikachu-happy",
-      "label": "3 \u00b7 Happy",
-      "src": "assets/pikachu/pikachu-happy.mp3"
+      "id": "pikachu-thunderbolt_1",
+      "label": "3 \u00b7 Thunderbolt",
+      "src": "assets/pikachu/pikachu-thunderbolt_1.mp3"
     },
     {
       "id": "pikachu-laughing",
@@ -34,8 +34,23 @@
       "src": "assets/pikachu/pikachu-laughing.mp3"
     },
     {
+      "id": "pikachu-happy",
+      "label": "5 \u00b7 Happy",
+      "src": "assets/pikachu/pikachu-happy.mp3"
+    },
+    {
+      "id": "pikachu_mw38Ry2",
+      "label": "6 \u00b7 Pikachu",
+      "src": "assets/pikachu/pikachu_mw38Ry2.mp3"
+    },
+    {
+      "id": "pikachu_scream",
+      "label": "7 \u00b7 Scream",
+      "src": "assets/pikachu/pikachu_scream.mp3"
+    },
+    {
       "id": "pika-pika-pikachu",
-      "label": "5 \u00b7 Pika pika Pikachu",
+      "label": "8 \u00b7 Pika pika Pikachu",
       "src": "assets/pikachu/pika-pika-pikachu.mp3"
     }
   ]

@@ -1,3 +1,5 @@
+import { createShuffleCycle } from './shuffle-cycle.js';
+
 const page = JSON.parse(document.getElementById('page-config').textContent);
 const button = document.getElementById('play');
 const status = document.getElementById('status');
@@ -8,6 +10,9 @@ const clipButtons = new Map();
 let lastId = null;
 let attempt = 0;
 let current = null;
+const cycle = createShuffleCycle(page.clips);
+// Initialise the round so individually selected sounds count when they finish.
+cycle.next();
 
 try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch { /* Optional browser API. */ }
 
@@ -49,9 +54,8 @@ for (const clip of page.clips) {
 }
 button.disabled = page.clips.length === 0;
 button.addEventListener('click', () => {
-  const choices = page.clips.filter(clip => clip.id !== lastId);
-  const pool = choices.length ? choices : page.clips;
-  if (pool.length) play(pool[Math.floor(Math.random() * pool.length)]);
+  const clip = cycle.next(lastId);
+  if (clip) play(clip);
 });
 stop.addEventListener('click', () => {
   ++attempt;
@@ -61,6 +65,7 @@ stop.addEventListener('click', () => {
   status.textContent = page.message;
 });
 audio.addEventListener('ended', () => {
+  if (current) cycle.complete(current.id);
   idle();
   status.textContent = 'Tap again for another sound';
 });
