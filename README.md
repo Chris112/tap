@@ -13,11 +13,11 @@ npm run check
 npm run preview
 ```
 
-Open `http://localhost:8765/pikachu/`. The root lists available pages. `demo/` has generated test tones. Pikachu contains seven user-supplied Downloads clips plus the retained Pika pika Pikachu candidate, each with an individual button. Source links and probes are in [docs/pikachu-sources.md](docs/pikachu-sources.md).
+Open `http://localhost:8765/pikachu/`. The root lists available pages. `demo/` has generated test tones. Pikachu contains seven user-supplied Downloads clips plus the retained Pika pika Pikachu candidate, played through the main button. Source links and probes are in [docs/pikachu-sources.md](docs/pikachu-sources.md).
 
 ## Add a page
 
-Copy a file in `pages/`, set a permanent lowercase slug, and change its title, message, button labels and theme colours. Put clips under `assets/<slug>/` and reference them with paths such as `assets/pikachu/pika-pika.mp3`. Each clip has a unique `id`, a readable `label`, and a `src`. Any number of clips is supported, including zero while preparing a page. An optional `image` object has `src` and `alt` fields and uses the same local asset paths.
+Copy a file in `pages/`, set a permanent lowercase slug, and change its title, message, button labels and theme colours. Put clips under `assets/<slug>/` and reference them with paths such as `assets/pikachu/pika-pika.mp3`. Set `minimal: true` to show only the title, main button and animated playback indicator, with status updates available to screen readers. The default detailed view also includes individual clip and stop buttons. Each clip has a unique `id`, a readable `label`, and a `src`. Any number of clips is supported, including zero while preparing a page. An optional `image` object has `src` and `alt` fields and uses the same local asset paths.
 
 Run `npm run check`. The generator validates slugs, fields, theme colours, duplicate IDs and referenced files before replacing the previous build. It generates `dist/<slug>/index.html`, with shared CSS and JavaScript. It needs no routing fallback and works beneath a GitHub Pages repository prefix.
 

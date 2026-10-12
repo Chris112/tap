@@ -19,11 +19,12 @@ try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } ca
 function idle() {
   document.body.classList.remove('playing');
   button.textContent = lastId ? 'Again!' : page.buttonLabel;
-  stop.hidden = true;
+  if (stop) stop.hidden = true;
   for (const item of clipButtons.values()) item.setAttribute('aria-pressed', 'false');
 }
 function failed() {
   idle();
+  button.textContent = 'Try again';
   status.textContent = 'Could not play this sound. Tap to try again.';
 }
 function play(clip) {
@@ -38,12 +39,12 @@ function play(clip) {
     lastId = clip.id;
     document.body.classList.add('playing');
     button.textContent = page.playingLabel;
-    status.textContent = `${clip.label}. Tap again for another.`;
-    stop.hidden = false;
+    status.textContent = page.minimal ? `Playing ${clip.label}` : `${clip.label}. Tap again for another.`;
+    if (stop) stop.hidden = false;
     for (const [id, item] of clipButtons) item.setAttribute('aria-pressed', String(id === clip.id));
   }).catch(() => { if (thisAttempt === attempt) failed(); });
 }
-for (const clip of page.clips) {
+for (const clip of list ? page.clips : []) {
   const item = document.createElement('button');
   item.type = 'button';
   item.textContent = clip.label;
@@ -57,7 +58,7 @@ button.addEventListener('click', () => {
   const clip = cycle.next(lastId);
   if (clip) play(clip);
 });
-stop.addEventListener('click', () => {
+stop?.addEventListener('click', () => {
   ++attempt;
   audio.pause();
   audio.currentTime = 0;
@@ -67,6 +68,6 @@ stop.addEventListener('click', () => {
 audio.addEventListener('ended', () => {
   if (current) cycle.complete(current.id);
   idle();
-  status.textContent = 'Tap again for another sound';
+  status.textContent = page.minimal ? 'Sound finished' : 'Tap again for another sound';
 });
 audio.addEventListener('error', () => { if (current) failed(); });

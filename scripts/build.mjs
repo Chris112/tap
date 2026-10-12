@@ -19,6 +19,7 @@ for (const name of (await readdir(resolve(root, 'pages'))).filter(n => n.endsWit
   slugs.add(page.slug);
   for (const field of ['title', 'message', 'buttonLabel', 'playingLabel']) assert(typeof page[field] === 'string' && page[field].trim(), `${name}: missing ${field}`);
   for (const field of ['background', 'glow', 'button', 'ring', 'text', 'buttonText']) assert(/^#[0-9a-fA-F]{6}$/.test(page.theme?.[field]), `${name}: invalid theme ${field}`);
+  assert(page.minimal === undefined || typeof page.minimal === 'boolean', `${name}: minimal must be a boolean`);
   assert(Array.isArray(page.clips), `${name}: clips must be an array`);
   const ids = new Set();
   for (const clip of page.clips) {
@@ -49,9 +50,8 @@ for (const page of pages) {
 ${page.image ? `<img class="art" src="../${escape(page.image.src)}" alt="${escape(page.image.alt)}">` : ''}
 <button id="play" class="main-button" type="button" disabled>${escape(page.buttonLabel)}</button>
 <div class="wave" aria-hidden="true">${'<span></span>'.repeat(20)}</div>
-<p id="status" role="status">${escape(page.clips.length ? page.message : 'Sounds are coming soon')}</p>
-<div id="clips" class="clips" role="group" aria-label="Choose a sound"></div>
-<button id="stop" class="stop" type="button" hidden>Stop sound</button>
+<p id="status"${page.minimal ? ' class="visually-hidden"' : ''} role="status">${escape(page.clips.length ? page.message : 'Sounds are coming soon')}</p>
+${page.minimal ? '' : '<div id="clips" class="clips" role="group" aria-label="Choose a sound"></div><button id="stop" class="stop" type="button" hidden>Stop sound</button>'}
 <audio id="audio" preload="none"></audio>
 <noscript><p>Enable JavaScript to play sounds.</p></noscript>
 </main><script id="page-config" type="application/json">${config}</script><script type="module" src="../assets/player.js"></script></body></html>`);
