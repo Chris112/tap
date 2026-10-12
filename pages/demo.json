@@ -1,0 +1,19 @@
+{
+  "slug": "demo",
+  "title": "Sound demo",
+  "message": "Two generated tones to test the player",
+  "buttonLabel": "Play a tone",
+  "playingLabel": "Playing",
+  "theme": {
+    "background": "#16302b",
+    "glow": "#275448",
+    "button": "#80c9ad",
+    "ring": "#d3efe0",
+    "text": "#eefaf3",
+    "buttonText": "#16302b"
+  },
+  "clips": [
+    { "id": "low", "label": "Low tone", "src": "assets/demo/low.wav" },
+    { "id": "high", "label": "High tone", "src": "assets/demo/high.wav" }
+  ]
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "name": "pika-pika",
+    "page": "https://instantsbutton.com/sound/pika-pika",
+    "file": "https://storage.instantsbutton.com/pika-pika.mp3",
+    "bytes": 33364,
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "2.063673"
+      }
+    },
+    "description": [
+      "Play the Pika Pika button, save the MP3, or set it as a ringtone for a bright, chirpy reaction suited to cute reveals, pet clips, and small wins."
+    ],
+    "sha256": "7dac5290b96f46d6aad8509bcaff520adee3dca29f1dc8828b7c39e8fb699389",
+    "decode_exit": 0,
+    "decode_stderr": ""
+  },
+  {
+    "name": "pikachu-happy",
+    "page": "https://instantsbutton.com/sound/pikachu-happy",
+    "file": "https://storage.instantsbutton.com/pikachu-happy.mp3",
+    "bytes": 15184,
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "0.914286"
+      }
+    },
+    "description": [
+      "A short happy Pikachu vocal sound from Pok\u00e9mon, used in edits, reaction posts and cute gaming clips when you want a cheerful anime-style burst."
+    ],
+    "sha256": "ab5107e6522f516d9ea4094a99d730a4338b09ceecbc82f992c40c3825fe1715",
+    "decode_exit": 0,
+    "decode_stderr": ""
+  },
+  {
+    "name": "pikachu-laughing",
+    "page": "https://instantsbutton.com/sound/pikachu-laughing",
+    "file": "https://storage.instantsbutton.com/pikachu-laughing.mp3",
+    "bytes": 43197,
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "16000",
+          "channels": 1
+        },
+        {
+          "codec_name": "png"
+        }
+      ],
+      "format": {
+        "duration": "3.888000"
+      }
+    },
+    "description": [
+      "Play Pikachu laughing sound button online, share it with friends or download the MP3 for free on InstantsButton."
+    ],
+    "sha256": "502d7a326f13ec6d16137a33ac0c80779059560b46af39dfb36a1b06b465fad4",
+    "decode_exit": 0,
+    "decode_stderr": ""
+  },
+  {
+    "name": "pika-pika-pikachu",
+    "page": "https://instantsbutton.com/sound/pika-pika-pikachu",
+    "file": "https://storage.instantsbutton.com/pika-pika-pikachu.mp3",
+    "bytes": 109293,
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "6.816000"
+      }
+    },
+    "description": [
+      "Pika Pika Pikachu"
+    ],
+    "sha256": "6b8e168a6d09f57e4610b9e5cd905612a6a29dc0cc1d1872b11ebc117c472384",
+    "decode_exit": 0,
+    "decode_stderr": ""
+  },
+  {
+    "name": "pikachu-sound",
+    "page": "https://instantsbutton.com/sound/pikachu-sound",
+    "file": "https://storage.instantsbutton.com/pikachu-sound.mp3",
+    "bytes": 22888,
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "1.410612"
+      }
+    },
+    "description": [
+      "A short Pikachu voice clip from Pok\u00e9mon, saying its signature name. People use this cute reaction sound in memes, gaming edits and anime posts."
+    ],
+    "sha256": "55ddbb2d1a12239c9b8ce714ddbbedc1e136914f91ce64819132c8b55065dba0",
+    "decode_exit": 0,
+    "decode_stderr": ""
+  }
+]

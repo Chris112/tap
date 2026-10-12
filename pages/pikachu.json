@@ -1,0 +1,42 @@
+{
+  "slug": "pikachu",
+  "title": "Pikachu",
+  "message": "Try the five sound candidates below",
+  "buttonLabel": "Tap me!",
+  "playingLabel": "Pika!",
+  "theme": {
+    "background": "#332909",
+    "glow": "#65500f",
+    "button": "#f7d347",
+    "ring": "#fff1a6",
+    "text": "#fff7db",
+    "buttonText": "#332909"
+  },
+  "clips": [
+    {
+      "id": "pikachu-sound",
+      "label": "1 \u00b7 Pikachu",
+      "src": "assets/pikachu/pikachu-sound.mp3"
+    },
+    {
+      "id": "pika-pika",
+      "label": "2 \u00b7 Pika pika",
+      "src": "assets/pikachu/pika-pika.mp3"
+    },
+    {
+      "id": "pikachu-happy",
+      "label": "3 \u00b7 Happy",
+      "src": "assets/pikachu/pikachu-happy.mp3"
+    },
+    {
+      "id": "pikachu-laughing",
+      "label": "4 \u00b7 Laughing",
+      "src": "assets/pikachu/pikachu-laughing.mp3"
+    },
+    {
+      "id": "pika-pika-pikachu",
+      "label": "5 \u00b7 Pika pika Pikachu",
+      "src": "assets/pikachu/pika-pika-pikachu.mp3"
+    }
+  ]
+}
